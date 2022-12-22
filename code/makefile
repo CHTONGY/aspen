@@ -51,7 +51,7 @@ ALL= memory_footprint run_static_algorithm run_batch_updates run_simultaneous_up
 all: $(ALL)
 
 % : tools/%.cpp
-	$(CC) $(CFLAGS) $(PFLAGS) -o $@ $< $(JEMALLOC)
+	sudo $(CC) $(CFLAGS) $(PFLAGS) -o $@ $< $(JEMALLOC)
 
 
 .PHONY : clean
