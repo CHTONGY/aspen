@@ -57,4 +57,4 @@ all: $(ALL)
 .PHONY : clean
 
 clean:
-	rm -f *.o $(ALL)
+	sudo rm -f *.o $(ALL)
